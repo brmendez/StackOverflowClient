@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDelegate>
 
+@property (nonatomic, strong) NSArray *people;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
