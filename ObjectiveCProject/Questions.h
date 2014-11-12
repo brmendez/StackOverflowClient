@@ -10,4 +10,10 @@
 
 @interface Questions : NSObject
 
+@property (nonatomic, strong) NSString *questionTitle;
+@property (nonatomic, strong) NSString *questionBody;
+
+- (instancetype)init: (NSDictionary *)questionDictionary;
++ (NSMutableArray *)ParseJSONDataIntoQuestions: (NSData *)rawJSONData;
+
 @end

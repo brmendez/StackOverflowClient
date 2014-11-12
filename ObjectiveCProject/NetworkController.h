@@ -11,6 +11,10 @@
 @interface NetworkController : NSObject
 
 @property (nonatomic, strong) NSOperationQueue *imageQueue;
-//@property (nonatomic, strong) *network;
++ (NetworkController *)sharedManager;
+
+
+- (void)fetchQuestions:(NSString *)searchString completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler;
+
 
 @end
