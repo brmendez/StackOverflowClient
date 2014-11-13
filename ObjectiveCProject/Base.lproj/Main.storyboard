@@ -174,7 +174,18 @@
                     <view key="view" contentMode="scaleToFill" id="1uO-dU-TEj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prB-QC-9p8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fJG-vf-QEX" firstAttribute="top" secondItem="prB-QC-9p8" secondAttribute="bottom" id="2pV-cH-Bsy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="prB-QC-9p8" secondAttribute="trailing" constant="-16" id="FsF-7J-3vY"/>
+                            <constraint firstItem="prB-QC-9p8" firstAttribute="top" secondItem="Yju-fd-YNr" secondAttribute="bottom" id="Z99-i8-EqM"/>
+                            <constraint firstItem="prB-QC-9p8" firstAttribute="leading" secondItem="1uO-dU-TEj" secondAttribute="leadingMargin" constant="-16" id="Zq3-W9-hcg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADD-Lc-olC" userLabel="First Responder" sceneMemberID="firstResponder"/>
