@@ -14,9 +14,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *questionArray;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void) searchBarButtonClicked : (UISearchBar *)searchBar;
 
 @end

@@ -11,9 +11,13 @@
 #import "NetworkController.h"
 @interface QuestionViewController ()
 
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
 @end
 
 @implementation QuestionViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,7 +28,7 @@
     
     self.searchBar.delegate = self;
 
-    self.searchBar.placeholder = @"Enter Search Here";
+    //self.searchBar.placeholder = @"Enter Search Here";
     
 //    [[NetworkController sharedManager] fetchQuestions:self.searchBar.text completionHandler:^(NSError *error, NSMutableArray *response) {
 //        
@@ -50,9 +54,9 @@
     return cell;
 }
 
-- (void) searchBarButtonClicked : (UISearchBar *)searchBar {
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     [[NetworkController sharedManager] fetchQuestions:self.searchBar.text completionHandler:^(NSError *error, NSMutableArray *response) {
-
+        
         self.questionArray = response;
         [self.tableView reloadData];
     }];
