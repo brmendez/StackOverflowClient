@@ -11,7 +11,6 @@
 @interface TableViewController : UITableViewController <UITableViewDelegate, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *people;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 

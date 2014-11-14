@@ -26,6 +26,23 @@
     return sharedMyManager;
 }
 
+- (instancetype)init {
+    if (self.urlSession == nil) {
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        self.urlSession = [NSURLSession sessionWithConfiguration:configuration];
+        NSString *authToken = [[NSUserDefaults standardUserDefaults] valueForKey:@"authToken"];
+        if (authToken) {
+            self.token = authToken;
+            NSLog(@"Token Retrieved");
+        }
+    }
+    return self;
+}
+
++ (void)setToken:(NSString *)token {
+    [[self sharedManager] setToken:token];
+}
+
 - (void)fetchQuestions:(NSString *)searchString completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler {
 
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];

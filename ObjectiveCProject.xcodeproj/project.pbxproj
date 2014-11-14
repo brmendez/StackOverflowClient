@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4505BDB11A14528700FEE05D /* SplitContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4505BDB01A14528700FEE05D /* SplitContainerViewController.m */; };
 		45416B271A12D93300E59C80 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45416B261A12D93300E59C80 /* TableViewController.m */; };
 		45416B2A1A12FF5000E59C80 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45416B291A12FF5000E59C80 /* QuestionViewController.m */; };
+		45B870041A15132700C8AF1A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B870031A15132700C8AF1A /* WebViewController.m */; };
 		45EB66F71A112AE3006829D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB66F61A112AE3006829D2 /* main.m */; };
 		45EB66FA1A112AE3006829D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB66F91A112AE3006829D2 /* AppDelegate.m */; };
 		45EB67001A112AE3006829D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EB66FE1A112AE3006829D2 /* Main.storyboard */; };
@@ -31,10 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4505BDAF1A14528700FEE05D /* SplitContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitContainerViewController.h; sourceTree = "<group>"; };
+		4505BDB01A14528700FEE05D /* SplitContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitContainerViewController.m; sourceTree = "<group>"; };
 		45416B251A12D93300E59C80 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		45416B261A12D93300E59C80 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		45416B281A12FF5000E59C80 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		45416B291A12FF5000E59C80 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		45B870021A15132700C8AF1A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		45B870031A15132700C8AF1A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		45EB66F11A112AE2006829D2 /* ObjectiveCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EB66F51A112AE3006829D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45EB66F61A112AE3006829D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,6 +161,10 @@
 		45EB67231A1171D2006829D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4505BDAF1A14528700FEE05D /* SplitContainerViewController.h */,
+				4505BDB01A14528700FEE05D /* SplitContainerViewController.m */,
+				45B870021A15132700C8AF1A /* WebViewController.h */,
+				45B870031A15132700C8AF1A /* WebViewController.m */,
 				45EB67281A119B21006829D2 /* NetworkController.h */,
 				45EB67291A119B21006829D2 /* NetworkController.m */,
 				45416B281A12FF5000E59C80 /* QuestionViewController.h */,
@@ -267,9 +277,11 @@
 				45416B271A12D93300E59C80 /* TableViewController.m in Sources */,
 				45EB67261A118161006829D2 /* Questions.m in Sources */,
 				45416B2A1A12FF5000E59C80 /* QuestionViewController.m in Sources */,
+				45B870041A15132700C8AF1A /* WebViewController.m in Sources */,
 				45EB66FA1A112AE3006829D2 /* AppDelegate.m in Sources */,
 				45EB672A1A119B21006829D2 /* NetworkController.m in Sources */,
 				45EB66F71A112AE3006829D2 /* main.m in Sources */,
+				4505BDB11A14528700FEE05D /* SplitContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

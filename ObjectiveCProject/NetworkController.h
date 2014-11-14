@@ -10,11 +10,13 @@
 
 @interface NetworkController : NSObject
 
-@property (nonatomic, strong) NSOperationQueue *imageQueue;
-+ (NetworkController *)sharedManager;
+@property (nonatomic, retain) NSString *network;
+@property (nonatomic, strong) NSString *token;
+@property (nonatomic, strong) NSURLSession *urlSession;
 
 
 - (void)fetchQuestions:(NSString *)searchString completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler;
-
++ (id)sharedManager;
++ (void)setToken:(NSString *)token;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WebViewController.h"
+#import "NetworkController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"oauth_token"];
+//    if (!token) {
+//        dispatch_after(1, dispatch_get_main_queue(), ^{
+//            [((UIWindow *)[[UIApplication sharedApplication].windows firstObject]).rootViewController presentViewController:[WebViewController new] animated:YES completion:nil];
+//        });
+//    } else {
+//        [NetworkController setToken:token];
+//    }
     return YES;
 }
 
