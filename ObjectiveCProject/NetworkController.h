@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSURLSession *urlSession;
 
 
-- (void)fetchQuestions:(NSString *)searchString completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler;
+- (void)fetchQuestions:(NSString *)urlWithSearchTerm searchSelector:(BOOL *)isQuestion completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler;
 + (id)sharedManager;
 + (void)setToken:(NSString *)token;
 

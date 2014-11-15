@@ -55,7 +55,9 @@
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    [[NetworkController sharedManager] fetchQuestions:self.searchBar.text completionHandler:^(NSError *error, NSMutableArray *response) {
+    
+    
+    [[NetworkController sharedManager] fetchQuestions:self.searchBar.text searchSelector:true completionHandler:^(NSError *error, NSMutableArray *response) {
         
         self.questionArray = response;
         [self.tableView reloadData];

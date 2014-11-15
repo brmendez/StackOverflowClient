@@ -8,6 +8,7 @@
 
 #import "NetworkController.h"
 #import "Questions.h"
+#import "User.h"
 
 @interface NetworkController()
 
@@ -43,12 +44,16 @@
     [[self sharedManager] setToken:token];
 }
 
-- (void)fetchQuestions:(NSString *)searchString completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler {
-
+- (void)fetchQuestions:(NSString *)searchTerm searchSelector:(BOOL *)isQuestion completionHandler: (void(^)(NSError *error, NSMutableArray *response))completionHandler {
+    NSString *urlWithSearchTerm = [[NSString alloc] init];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.URLSession = [NSURLSession sessionWithConfiguration:configuration];
 //    need URL, pass URL in to session dataTask, gets data, put data into parse
-    NSString *urlWithSearchTerm = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&tagged=%@&site=stackoverflow", searchString];
+    if (isQuestion) {
+        urlWithSearchTerm = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&tagged=%@&site=stackoverflow", searchTerm];
+    } else {
+        urlWithSearchTerm = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/users?order=desc&sort=reputation&inname=%@&site=stackoverflow", searchTerm];    }
+    
     NSURL *url = [[NSURL alloc] initWithString:urlWithSearchTerm];
 
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -64,9 +69,15 @@
             NSInteger statusCode = [httpResponse statusCode];
             
             if (statusCode >= 200 && statusCode <= 299) {
-                NSMutableArray *questions = [Questions ParseJSONDataIntoQuestions:data];
-                [[NSOperationQueue mainQueue] addOperationWithBlock:^{completionHandler(nil,questions);
+                if (isQuestion) {
+                    NSMutableArray *questions = [Questions ParseJSONDataIntoQuestions:data];
+                    [[NSOperationQueue mainQueue] addOperationWithBlock:^{completionHandler(nil,questions);
+                    }];
+                } else {
+                NSMutableArray *users = [User ParseJSONDataIntoUsers:data];
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{completionHandler(nil,users);
                 }];
+                }
             } else if (statusCode >= 400 && statusCode <= 499) {
                 NSLog(@"Error! Status code is: %lu", statusCode);
                 NSLog(@"This is the clients fault");

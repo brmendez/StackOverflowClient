@@ -12,10 +12,8 @@
 
 @property NSInteger reputation;
 
-@property (nonatomic, strong) NSString *userId;
 @property (nonatomic, strong) NSString *displayName;
-@property (nonatomic, strong) NSString *profileImage;
 
-+ (NSDictionary *)ParseJSONDataIntoUsers: (NSData *)rawJSONData;
++ (NSMutableArray *)ParseJSONDataIntoUsers: (NSData *)rawJSONData;
 
 @end
