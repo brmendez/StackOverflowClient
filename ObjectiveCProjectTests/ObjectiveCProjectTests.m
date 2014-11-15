@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Questions.h"
 
 @interface ObjectiveCProjectTests : XCTestCase
 
@@ -23,6 +24,14 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+-(void)testParseReturnArray {
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *pathWay = [bundle pathForResource:@"testJSON" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:pathWay];
+    NSMutableArray *tempArray = [Questions ParseJSONDataIntoQuestions:data];
+    XCTAssert([tempArray isKindOfClass:[NSMutableArray class]]);
 }
 
 - (void)testExample {

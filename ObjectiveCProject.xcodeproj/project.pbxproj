@@ -12,6 +12,7 @@
 		456429941A16B261001C6403 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456429931A16B261001C6403 /* UsersViewController.m */; };
 		4564299D1A180665001C6403 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4564299B1A1804A0001C6403 /* Localizable.strings */; };
 		45B870041A15132700C8AF1A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B870031A15132700C8AF1A /* WebViewController.m */; };
+		45DCDFD91A180BD900E1F06D /* testJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 45DCDFD81A180BD900E1F06D /* testJSON.json */; };
 		45EB66F71A112AE3006829D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB66F61A112AE3006829D2 /* main.m */; };
 		45EB66FA1A112AE3006829D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB66F91A112AE3006829D2 /* AppDelegate.m */; };
 		45EB67001A112AE3006829D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EB66FE1A112AE3006829D2 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		4564299C1A1804A6001C6403 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45B870021A15132700C8AF1A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		45B870031A15132700C8AF1A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		45DCDFD81A180BD900E1F06D /* testJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = testJSON.json; path = ObjectiveCProjectTests/testJSON.json; sourceTree = SOURCE_ROOT; };
 		45EB66F11A112AE2006829D2 /* ObjectiveCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EB66F51A112AE3006829D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45EB66F61A112AE3006829D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		45EB66E81A112AE2006829D2 = {
 			isa = PBXGroup;
 			children = (
+				45DCDFD81A180BD900E1F06D /* testJSON.json */,
 				45EB66F31A112AE2006829D2 /* ObjectiveCProject */,
 				45EB670D1A112AE3006829D2 /* ObjectiveCProjectTests */,
 				45EB66F21A112AE2006829D2 /* Products */,
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DCDFD91A180BD900E1F06D /* testJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
