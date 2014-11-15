@@ -28,7 +28,7 @@
     
     self.searchBar.delegate = self;
 
-    //self.searchBar.placeholder = @"Enter Search Here";
+    self.searchBar.placeholder = NSLocalizedString(@"Enter Search Here", nil);
     
 //    [[NetworkController sharedManager] fetchQuestions:self.searchBar.text completionHandler:^(NSError *error, NSMutableArray *response) {
 //        

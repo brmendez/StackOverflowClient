@@ -10,6 +10,7 @@
 		4505BDB11A14528700FEE05D /* SplitContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4505BDB01A14528700FEE05D /* SplitContainerViewController.m */; };
 		45416B2A1A12FF5000E59C80 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45416B291A12FF5000E59C80 /* QuestionViewController.m */; };
 		456429941A16B261001C6403 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456429931A16B261001C6403 /* UsersViewController.m */; };
+		4564299D1A180665001C6403 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4564299B1A1804A0001C6403 /* Localizable.strings */; };
 		45B870041A15132700C8AF1A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B870031A15132700C8AF1A /* WebViewController.m */; };
 		45EB66F71A112AE3006829D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB66F61A112AE3006829D2 /* main.m */; };
 		45EB66FA1A112AE3006829D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB66F91A112AE3006829D2 /* AppDelegate.m */; };
@@ -39,6 +40,10 @@
 		45416B291A12FF5000E59C80 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		456429921A16B261001C6403 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
 		456429931A16B261001C6403 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
+		456429951A18044F001C6403 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		456429961A18044F001C6403 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4564299A1A1804A0001C6403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4564299C1A1804A6001C6403 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45B870021A15132700C8AF1A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		45B870031A15132700C8AF1A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		45EB66F11A112AE2006829D2 /* ObjectiveCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +149,7 @@
 				45EB67201A117152006829D2 /* User.m */,
 				45EB67241A118161006829D2 /* Questions.h */,
 				45EB67251A118161006829D2 /* Questions.m */,
+				4564299B1A1804A0001C6403 /* Localizable.strings */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 45EB66E81A112AE2006829D2;
 			productRefGroup = 45EB66F21A112AE2006829D2 /* Products */;
@@ -253,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4564299D1A180665001C6403 /* Localizable.strings in Resources */,
 				45EB67001A112AE3006829D2 /* Main.storyboard in Resources */,
 				45EB67051A112AE3006829D2 /* LaunchScreen.xib in Resources */,
 				45EB67021A112AE3006829D2 /* Images.xcassets in Resources */,
@@ -304,10 +312,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4564299B1A1804A0001C6403 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4564299A1A1804A0001C6403 /* en */,
+				4564299C1A1804A6001C6403 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		45EB66FE1A112AE3006829D2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				45EB66FF1A112AE3006829D2 /* Base */,
+				456429951A18044F001C6403 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -316,6 +334,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45EB67041A112AE3006829D2 /* Base */,
+				456429961A18044F001C6403 /* es */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
