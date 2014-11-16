@@ -10,7 +10,6 @@
 
 @implementation Questions
 
-
 - (instancetype)init: (NSDictionary *)questionDictionary {
     self = [super init];
     if (self) {
@@ -24,8 +23,8 @@
 + (NSMutableArray *)ParseJSONDataIntoQuestions: (NSData *)rawJSONData {
     
     NSError *error = nil;
-    NSMutableArray *questions = [[NSMutableArray alloc] init];
     NSDictionary *searchJSONDictionary = [NSJSONSerialization JSONObjectWithData:rawJSONData options:0 error: &error];
+        NSMutableArray *questions = [[NSMutableArray alloc] init];
     for (NSDictionary *questionsDictionary in searchJSONDictionary[@"items"]) {
         Questions *questionsObject = [[Questions alloc] init: questionsDictionary];
         [questions addObject:questionsObject];

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4505BDB11A14528700FEE05D /* SplitContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4505BDB01A14528700FEE05D /* SplitContainerViewController.m */; };
+		452F96FD1A18A0DC00698AC5 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F96FC1A18A0DC00698AC5 /* RootTableViewController.m */; };
 		45416B2A1A12FF5000E59C80 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45416B291A12FF5000E59C80 /* QuestionViewController.m */; };
 		456429941A16B261001C6403 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456429931A16B261001C6403 /* UsersViewController.m */; };
 		4564299D1A180665001C6403 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4564299B1A1804A0001C6403 /* Localizable.strings */; };
@@ -37,8 +38,16 @@
 /* Begin PBXFileReference section */
 		4505BDAF1A14528700FEE05D /* SplitContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitContainerViewController.h; sourceTree = "<group>"; };
 		4505BDB01A14528700FEE05D /* SplitContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitContainerViewController.m; sourceTree = "<group>"; };
+		452F96FB1A18A0DC00698AC5 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		452F96FC1A18A0DC00698AC5 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		45416B281A12FF5000E59C80 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		45416B291A12FF5000E59C80 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		455576871A1895BC00871809 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		455576881A1895BC00871809 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		455576891A1895BC00871809 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4555768A1A189C4100871809 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		4555768B1A189C4100871809 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4555768C1A189C4100871809 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		456429921A16B261001C6403 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
 		456429931A16B261001C6403 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
 		456429951A18044F001C6403 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -178,6 +187,8 @@
 				45416B291A12FF5000E59C80 /* QuestionViewController.m */,
 				456429921A16B261001C6403 /* UsersViewController.h */,
 				456429931A16B261001C6403 /* UsersViewController.m */,
+				452F96FB1A18A0DC00698AC5 /* RootTableViewController.h */,
+				452F96FC1A18A0DC00698AC5 /* RootTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -246,6 +257,8 @@
 				en,
 				Base,
 				es,
+				"es-MX",
+				fr,
 			);
 			mainGroup = 45EB66E81A112AE2006829D2;
 			productRefGroup = 45EB66F21A112AE2006829D2 /* Products */;
@@ -290,6 +303,7 @@
 				45EB67261A118161006829D2 /* Questions.m in Sources */,
 				45416B2A1A12FF5000E59C80 /* QuestionViewController.m in Sources */,
 				45B870041A15132700C8AF1A /* WebViewController.m in Sources */,
+				452F96FD1A18A0DC00698AC5 /* RootTableViewController.m in Sources */,
 				45EB66FA1A112AE3006829D2 /* AppDelegate.m in Sources */,
 				45EB672A1A119B21006829D2 /* NetworkController.m in Sources */,
 				45EB66F71A112AE3006829D2 /* main.m in Sources */,
@@ -321,6 +335,8 @@
 			children = (
 				4564299A1A1804A0001C6403 /* en */,
 				4564299C1A1804A6001C6403 /* es */,
+				455576891A1895BC00871809 /* es-MX */,
+				4555768C1A189C4100871809 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -330,6 +346,8 @@
 			children = (
 				45EB66FF1A112AE3006829D2 /* Base */,
 				456429951A18044F001C6403 /* es */,
+				455576871A1895BC00871809 /* es-MX */,
+				4555768A1A189C4100871809 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +357,8 @@
 			children = (
 				45EB67041A112AE3006829D2 /* Base */,
 				456429961A18044F001C6403 /* es */,
+				455576881A1895BC00871809 /* es-MX */,
+				4555768B1A189C4100871809 /* fr */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

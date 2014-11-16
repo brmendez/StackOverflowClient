@@ -26,7 +26,6 @@
     return self;
 }
 
-
 +(NSMutableArray*) ParseJSONDataIntoUsers:(NSData *)rawJSONData {
     NSMutableArray *usersArray = [[NSMutableArray alloc] init];
     //needed to create this property for NSJSONSerialization
@@ -44,7 +43,5 @@
     }
     return usersArray;
 }
-
-
 
 @end

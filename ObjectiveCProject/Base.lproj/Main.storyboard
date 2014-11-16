@@ -57,7 +57,7 @@
         <!--Root View Controller-->
         <scene sceneID="qAj-DW-QoF">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="hJf-Lz-iM8" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="hJf-Lz-iM8" customClass="RootTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XGP-9a-zsk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,6 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36B-1i-skZ">
                                                     <rect key="frame" x="8" y="13" width="584" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -115,7 +114,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P43-Jg-GHq" id="fPd-SA-94h">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGa-F7-tNj">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGa-F7-tNj">
                                                     <rect key="frame" x="8" y="10" width="584" height="30"/>
                                                     <state key="normal" title="OAuth 2.0">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,6 +125,11 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RGa-F7-tNj" firstAttribute="leading" secondItem="fPd-SA-94h" secondAttribute="leading" constant="8" id="59W-yQ-HBy"/>
+                                                <constraint firstItem="RGa-F7-tNj" firstAttribute="top" secondItem="fPd-SA-94h" secondAttribute="top" constant="10" id="JdL-4O-z3d"/>
+                                                <constraint firstAttribute="trailing" secondItem="RGa-F7-tNj" secondAttribute="trailing" constant="8" id="Qj1-jA-2US"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -137,6 +141,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="46v-DK-ALB"/>
+                    <connections>
+                        <outlet property="oAuthLabel" destination="RGa-F7-tNj" id="2BM-YK-Jkq"/>
+                        <outlet property="questionsLabel" destination="36B-1i-skZ" id="hWi-AZ-9S5"/>
+                        <outlet property="usersLabel" destination="Gr8-yW-axp" id="T9s-I2-dhV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCd-pV-iw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

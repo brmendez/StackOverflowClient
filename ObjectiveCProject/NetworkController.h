@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) NSString *network;
 @property (nonatomic, strong) NSString *token;
+//supports authentication and gives your app ability to perform background downloads when app is not running or, in iOS, while your app is suspended
 @property (nonatomic, strong) NSURLSession *urlSession;
 
 

@@ -23,6 +23,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.searchBar.delegate = self;
+    self.searchBar.placeholder = NSLocalizedString(@"Enter Search Here", @"Search database here");
 
 }
 

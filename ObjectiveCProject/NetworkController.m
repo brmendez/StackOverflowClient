@@ -30,6 +30,7 @@
 - (instancetype)init {
     if (self.urlSession == nil) {
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        //A configuration object that specifies certain behaviors, such as caching policies, timeouts, proxies, pipelining,
         self.urlSession = [NSURLSession sessionWithConfiguration:configuration];
         NSString *authToken = [[NSUserDefaults standardUserDefaults] valueForKey:@"oauth_token"];
         if (authToken) {

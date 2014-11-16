@@ -6,6 +6,6 @@
   Copyright (c) 2014 Brian Mendez. All rights reserved.
 */
 
-"Enter Search Here" = "Ingrese aquí";
-"Question Search" = "Búsqueda de Preguntas";
-"User Search" = "Búsqueda de usuarios";
+"Enter Search Here" = "Entrez votre recherche";
+"Question Search" = "Rechercher les questions";
+"User Search" = "Recherche de l'Utilisateur";

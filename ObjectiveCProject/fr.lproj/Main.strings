@@ -1,0 +1,12 @@
+
+/* Class = "IBUILabel"; text = "Questions"; ObjectID = "36B-1i-skZ"; */
+"36B-1i-skZ.text" = "Questions";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "46v-DK-ALB"; */
+"46v-DK-ALB.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "Users"; ObjectID = "Gr8-yW-axp"; */
+"Gr8-yW-axp.text" = "Users";
+
+/* Class = "IBUIButton"; normalTitle = "OAuth 2.0"; ObjectID = "RGa-F7-tNj"; */
+"RGa-F7-tNj.normalTitle" = "OAuth 2.0";
