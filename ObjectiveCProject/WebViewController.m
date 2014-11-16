@@ -34,8 +34,6 @@
     NSURL *url = [[NSURL alloc] initWithString:loginURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-//    [self loadView];
-    
     [self.webView loadRequest:request];
     
 }
