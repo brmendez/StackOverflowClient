@@ -31,10 +31,10 @@
     if (self.urlSession == nil) {
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         self.urlSession = [NSURLSession sessionWithConfiguration:configuration];
-        NSString *authToken = [[NSUserDefaults standardUserDefaults] valueForKey:@"authToken"];
+        NSString *authToken = [[NSUserDefaults standardUserDefaults] valueForKey:@"oauth_token"];
         if (authToken) {
             self.token = authToken;
-            NSLog(@"Token Retrieved");
+            NSLog(@"Token: %@", authToken);
         }
     }
     return self;
@@ -55,12 +55,16 @@
         urlWithSearchTerm = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/users?order=desc&sort=reputation&inname=%@&site=stackoverflow", searchTerm];    }
     
     NSURL *url = [[NSURL alloc] initWithString:urlWithSearchTerm];
+    
+    NSString *authKey = [[NSUserDefaults standardUserDefaults] valueForKey:@"oauth_token"];
+    if (authKey) {
+        [url URLByAppendingPathComponent:authKey];
+    }
 
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     request.HTTPMethod = @"GET";
     
-    NSURLSessionDataTask *dataTask = [self.URLSession dataTaskWithRequest:request
-                                                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSURLSessionDataTask *dataTask = [self.URLSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error != nil) {
             NSLog(@"%@", [error localizedDescription]);
         } else {

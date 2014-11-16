@@ -81,8 +81,4 @@
 
 }
 
-//func webView(webView: UIWebView!,
-//             shouldStartLoadWithRequest request: NSURLRequest!,
-//             navigationType: UIWebViewNavigationType) -> Bool
-
 @end
