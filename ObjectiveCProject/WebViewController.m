@@ -62,7 +62,5 @@
         [[NetworkController sharedManager] setToken:token];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
-
 }
-
 @end

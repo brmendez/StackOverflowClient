@@ -14,7 +14,6 @@
 //@property (strong, nonatomic) IBOutlet UIButton *oAuthLabel;
 @property (weak, nonatomic) IBOutlet UIButton *oAuthLabel;
 
-
 @end
 
 @implementation RootTableViewController

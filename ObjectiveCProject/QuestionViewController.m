@@ -42,7 +42,6 @@
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     
-    
     [[NetworkController sharedManager] fetchQuestions:self.searchBar.text searchSelector:true completionHandler:^(NSError *error, NSMutableArray *response) {
         
         self.questionArray = response;
